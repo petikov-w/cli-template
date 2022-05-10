@@ -3,11 +3,9 @@
     <Header></Header>
     <div class="wrapper-content">
         <div class="container">
-          <h1 style="margin: 20px 0 20px 0; color: green; font-size: 1.3rem; font-weight: 600">Главная</h1>
-          <p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому
-            кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.
-            С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу
-            (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.</p>
+          <h1 style="margin: 20px 0 20px 0; color: green;
+                     font-size: 1.3rem; font-weight: 600">{{ content.article01.title }}</h1>
+          <p>{{ content.article01.text }}</p>
         </div>
       </div>
     <Footer></Footer>
@@ -17,8 +15,15 @@
 <script>
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-  export default {
-    components: { Header, Footer}
+import {contentHome} from "@/_config";
+
+export default {
+    components: { Header, Footer},
+  data() {
+    return {
+      content: contentHome
+    }
+  },
   }
 </script>
 

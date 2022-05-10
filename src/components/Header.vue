@@ -14,22 +14,12 @@
 </template>
 
 <script>
+import {listNavMenu} from "@/_config"
 export default {
   name: 'Header-m',
   data() {
     return {
-      links: [
-        {
-          title: "Home",
-          alias: "home",
-          url: "/"
-        },
-        {
-          title: "About",
-          alias: "about",
-          url: "/about"
-        }
-        ]
+      links: listNavMenu,
     }
   }
 }
