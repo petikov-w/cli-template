@@ -1,3 +1,7 @@
+export const site = {
+    title: "Курс по Vue 3",
+};
+
 export const listNavMenu = [
     {
         title: "Home",
